@@ -1,20 +1,3 @@
-#include "Rectangle.h"
-#include <iostream>
-#include <iomanip>
-using namespace std;
-Rectangle* sortBySelection(Rectangle rectIn[], int size) {
-    Rectangle* rectOut = new Rectangle[size];
-    for (int i = 0; i < size; i++) {
-        int place = 0;
-        for (int j = 0; j < size; j++) {
-            if (rectIn[i].getArea() > rectIn[j].getArea()) {
-                place++;
-            }
-        }
-        rectOut[place] = rectIn[i];
-    }
-    return rectOut;
-}
 #include <iostream>
 #include <iomanip>
 #include "Rectangle.h"
