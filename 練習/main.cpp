@@ -1,9 +1,7 @@
 #include <iostream>
 #include <iomanip>
 #include "Rectangle.h"
-
 using namespace std;
-
 int main()
 {
     double a, b, c, d;
@@ -18,5 +16,4 @@ int main()
     cout << fixed << setprecision(2) << "SwapByPointer:" << r1.getArea() << " " << r2.getArea() << " to ";
     r1.swapByPointer(r2);
     cout << r1.getArea() << " " << r2.getArea() << endl;
-
 }
