@@ -2,21 +2,21 @@
 
 Rectangle::Rectangle()
 {
-	width = 1;
-	height = 1;
+	width = 0;
+	height = 0;
 }
-Rectangle::Rectangle(double a, double b)
+Rectangle::Rectangle(double w, double h)
 {
-	this->width = a;
-	this->height = b;
+        (* this).width = w;
+	(* this).height = h;
 }
-void Rectangle::setWidth(double a)
+void Rectangle::setWidth(double w)
 {
-	this->width = a;
+	(* this).width = w;
 }
-void Rectangle::setHeight(double a)
+void Rectangle::setHeight(double h)
 {
-	this->height = a;
+	(* this).height = h;
 }
 double Rectangle::getWidth()
 {
