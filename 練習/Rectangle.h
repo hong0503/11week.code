@@ -3,6 +3,9 @@
 
 class Rectangle
 {
+private:
+	double width;
+	double height;
 public:
 	Rectangle();
 	Rectangle(double, double);
@@ -13,9 +16,5 @@ public:
 	double getArea();
 	void swapByPointer(Rectangle&);
 	void swapByReference(Rectangle*);
-private:
-	double width;
-	double height;
-
 };
 #endif
